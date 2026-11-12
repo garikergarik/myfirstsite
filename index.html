@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой первый сайт</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #10172e, #542b91);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.2);
+    }
+
+    header h2 {
+      color: #a78bfa;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    main {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 65px);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 1.6;
+      max-width: 600px;
+      color: #ded6f5;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 16px 32px;
+      border: none;
+      border-radius: 30px;
+      background: #a78bfa;
+      color: #17102c;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+      background: #c4b5fd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #c4b5fd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>MY WEBSITE</h2>
+    <nav>
+      <a href="#home">Главная</a>
+      <a href="#about">О сайте</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <h1>Добро пожаловать! 🚀</h1>
+
+    <p id="about">
+      Это мой первый настоящий сайт.
+      Здесь начинается моя история в интернете.
+      Скоро здесь появится что-то невероятное!
+    </p>
+
+    <button onclick="showMessage()">
+      Нажми на меня
+    </button>
+  </main>
+
+  <footer>
+    © 2026 Мой первый сайт. Все права защищены.
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Поздравляю! Твой сайт работает! 🎉");
+    }
+  </script>
+
+</body>
+</html>
